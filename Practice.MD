@@ -101,3 +101,26 @@ public class Main {
 ```
 1900 is not a leap year.
 ```
+
+## 4. Program to Lookup enum by String value:
+```
+public class EnumString {
+
+    public enum TextStyle {
+        BOLD, ITALICS, UNDERLINE, STRIKETHROUGH
+    }
+
+    public static void main(String[] args) {
+
+        String style = "Bold";
+
+        TextStyle textStyle = TextStyle.valueOf(style.toUpperCase());
+
+        System.out.println(textStyle);
+    }
+}
+```
+### Output:
+```
+BOLD
+```
